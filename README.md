@@ -1,8 +1,8 @@
-# Enoque's Ux Research Portfolio
+# Enoque's UX Research Portfolio
 ## Topics Overview
-* [Project 1.](#fortnite) Sentiment Analysis and Web Scraping ([code](#code4))
-* [Project 2.](#survey) Survey Research -- How does sleep deprivation affect how we interact with others? ([code](#code2))
-* [Project 3.](#wine) Regression ([code](#code1))
+* [Project 1.](#fortnite) Games Research — Sentiment Analysis and Web Scraping ([code](#code1))
+* [Project 2.](#survey) Survey Research — How does sleep deprivation affect how we interact with others? ([code](#code2))
+* [Project 3.](#wine) Regression — What Makes Wine Taste Good? ([code](#code3))
 
 # Project 1: Analyzing Player Sentiment on Fortnite's Changes to the XP System <a name="fortnite"></a>
 ### Introduction
@@ -43,6 +43,24 @@
 
 ### Closing Thoughts
 * We were able to engage in deep discussion and took a step forward in understanding player sentiment.  This project was very interesting and gave me a lot of new insights in better understanding people's different experiences and how they play Fortnite. I hope to bring my knowledge and passion for gaming, user research, and data analysis to the next opportunity that arises. Thanks for reading!
+
+<br>
+
+<a href="#top">Back to top</a>
+
+# Project 2: Survey Research -- The Effects of Sleep Deprivation on Behavior <a name="survey"></a>
+### Introduction
+* This project is a summary of my role in one of UC Berkeley's social psychology studies. The study was a diary study that spanned for more than a year. We explored the effects of sleep deprivation on prosocial behavior. Participants were randomly assigned to either sleep deprivation or their regular sleep schedule. Participants completed daily surveys for a week, and on the final day they participated in a synchronous moderated remote session.
+![](/image/survey_pic.jpg)
+### Survey Design and User Interviews
+* I designed and launched survey questionnaires by using Qualtrics. Participants filled out these surveys throughout the week when they were participating in the study; which served to measure their daily sleep patterns, baseline emotional state, and post-condition emotional state. Before the study officially launched, I also conducted 1:1 interviews with pilot participants to iteratively improve the survey design.
+![](/image/Page2_edited.jpg)
+### Running Remote Testing
+* On the last day of the experiment, participants participated on a synchronous online activity, where they engaged in discussion with a study confederate. I led 40+ user testings as both the moderator and confederate of the study. The moderator facilitated the remote sessions and engaged the participants in discussion. The confederate role pretended to be a participant and interacted with the real participant by following a predetermined script.
+![](/image/Page1_edited.jpg)
+### Statistical Analysis in Python
+* The study aimed to compare the differences in prosocial behavior and emotional states of the control group (those who were told to not change their sleep schedules) and experimental group (those who were assigned to the sleep deprivation condition). I cleaned the data, graded the psychometric scales, and performed hypothesis testing of the data by using Python and its statistical packages.
+* [Here](#code2) is the full code analysis with some redacted information.
 
 <br>
 
@@ -93,7 +111,7 @@
 <a href="#top">Back to top</a>
 
 ## Project 2 Code  <a name="code2"></a>
-
+![](/image/qualtrics_code.png)
 <br>
 <a href="#top">Back to top</a>
 
