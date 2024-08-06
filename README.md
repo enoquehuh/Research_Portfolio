@@ -90,9 +90,9 @@
 * Our model's L1 ratio chosen by cross-validation was 1, so in this case our elastic net model is the same as a lasso regression model.
 ### Results
 #### Features
-![](/image/wine%201.jpg)
+![](/image/wine_1.jpg)
 #### Comparing Models on Test Data
-![](/image/all%20models.png)
+![](/image/all_models.png)
 
 <a href="#top">Back to top</a>
 
