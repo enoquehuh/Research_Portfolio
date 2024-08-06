@@ -7,7 +7,7 @@
 # Project 1: Analyzing Player Sentiment on Fortnite's Changes to the XP System <a name="fortnite"></a>
 ### Introduction
 * Fortnite’s recent changes to how players can get XP (experience points) was received with mixed opinions. With the purchase of the Battle Pass (that costs 950 V-Bucks or around $8), players receive in-game rewards according to their levels. Players have a chance to win all of the Battle Pass rewards by reaching level 200 by the end of the season. One way to ensure you progress through all the levels and receive all of the rewards is by completing quests. Until recently, players were given quests that could be completed throughout the season, whenever they wanted. But with the changes to the Weekly Quests, players now have exactly one week to complete these quests before they expire forever. This has caused a lot of backlash in the community and has left casual players feeling like they're missing out on a lot of XP and potential rewards, and that there’s not enough time to complete their weekly quests.
-![](/images/fortnite_cover.png)
+![](/image/fortnite_cover.png)
 ### Web Scraping the Data from Reddit
 * On the Fortnite subreddit r/FortNiteBR, there was an interesting discussion thread titled: “Can We All Agree That Having 1 Week To Do Quests is Stupid?”. This post garnered tremendous attention, being one of the most upvoted discussion posts this year, with almost 6,000 upvotes. To better understand player sentiment and what people are saying about these recent changes, I decided to web scrape this whole post from Reddit, import it into a DataFrame in Python, and analyze this discussion through data.
 ### Sorting the Data
@@ -22,20 +22,20 @@
 1. Polarity score: a score that ranges from -1 (which indicates negative sentiment) to 1 (which indicates positive sentiment).
 2. Subjectivity score: a score that ranges from 0 (factual) to 1 (subjective). Subjective sentences generally refer to personal opinion, emotion, or judgment.
 * Since this is a Reddit discussion thread, it’s expected that most comments will have high subjectivity scores.
-![](/images/fortnite_sent.png)
+![](/image/fortnite_sent.png)
 ### Data Visualizations
-![](/images/fortnite_words_enhanced.png)
-![](/images/fortnite_image_sentiment_1.png)
-![](/images/fortnite_sentiment_2.png)
+![](/image/fortnite_words_enhanced.png)
+![](/image/fortnite_image_sentiment_1.png)
+![](/image/fortnite_sentiment_2.png)
 ### Player Insights
 * Reading through the best comments and most upvoted comments, we see that there are a few recurring topics that had great discussion, and interesting insights from players of various backgrounds.
 #### 1. Fortnite shouldn't feel like a full-time job
 * A recurring topic that came up in discussion was that casual players don't have time to play Fortnite every single day. They want to enjoy the game and earn their Battle Pass rewards without having to commit multiple hours every day to the game. 
 * Adults make up a considerable part of the player base. They play Fortnite to unwind after a long day of working, and feel like these changes to the XP system negatively affect them. Here's what they had to say about it:
-![](/images/fortnite_image_fulltime.png)
+![](/image/fortnite_image_fulltime.png)
 #### 2. Fear of Missing Out (FOMO) Business Model
 * The FOMO monetization model incentivizes habitual playing and purchasing. Epic Games utilizes this business model extensively in Fortnite, for example: with limited-time cosmetic items, challenges, events, etc. Although this model has been extremely effective for player retention and monetization, it seems like players are fed up with it this time around. Here's what some people had to say about it:
-![](/images/fortnite_image_fomo.png)
+![](/image/fortnite_image_fomo.png)
 ### Limitations
 * Reddit is a great place to engage in discussion and learn something new. I learned so much by browsing the thread and got to understand many different perspectives and how players feel about the recent changes in Fortnite. One amazing thing about Reddit is that there's a lot of information and a lot of unfiltered opinions from many users. People can be genuine and express their true opinions because of the anonymity that Reddit provides.
 
@@ -51,7 +51,7 @@
 # Project 3: What Exactly Makes Wine Taste Good? <a name="wine"></a>
 ### Introduction
 * Wine preferences are very subjective as people tend to like different things. But is there a way to create an objectively good tasting wine with the help of machine learning? In this project, I aimed to find out what exactly makes wine taste good by analyzing the similarities and differences of 1600 wines. Objective features of the wine included things like: fixed acidity, residual sugars, pH level, alcohol content, etc. Each wine was rated by three different wine experts and the median of the ratings was used as the wine score which ranged from 0 (very bad) to 10 (excellent).
-![](/images/wine_image.jpeg)
+![](/image/wine_image.jpeg)
 ### Methods
 * Four different regression models were used to compare results: ordinary least squares, ridge regression, lasso regression, and elastic net.
 * Cross-validation was used for choosing the tuning parameters of all models except ordinary least squares.
@@ -61,10 +61,10 @@
 * We want to identify the coefficients of a linear model relating wine quality to different features of the wine. Our predictors are all of the features of the wine, and our response variable is the subjective rating that each wine was given by the wine experts. The complete list of 11 features includes: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulfates, and alcohol. The model was split 70/30 as train/test data.
 #### 2. Ridge Regression
 * To optimize our ridge regression model, we utilized the default leave-one-out cross validation, and inputted a list of ![](https://latex.codecogs.com/gif.latex?%5Calpha) values [0.1, 0.11, 0.12, ..., 2] where higher values of ![](https://latex.codecogs.com/gif.latex?%5Calpha) correspond to stronger regularization. The final ![](https://latex.codecogs.com/gif.latex?%5Calpha) value was 0.21 as shown by the graph below. We see that when ![](https://latex.codecogs.com/gif.latex?%5Calpha%3D0.21), the mean squared error is the lowest, and as ![](https://latex.codecogs.com/gif.latex?%5Calpha) increases past 0.21, the mean squared error increases rapidly. This shows that some regularization can help model performance, while too much regularization can reduce model performance.
-![](/images/ridge.png)
+![](/image/ridge.png)
 #### 3. Lasso Regression
 * For the lasso model, 5-fold cross-validation was used. We inputted a list of ![](https://latex.codecogs.com/gif.latex?%5Calpha) values [0.001, 0.002, 0.003, ..., 1] and the amount of penalization chosen was [$\alpha=0.001$](https://latex.codecogs.com/gif.latex?%5Calpha%3D0.001). We observe that in contrast to ridge regression, lasso regression gets rid of some features completely, as residual sugar as well as density are now both 0. This is because lasso (L1 regularization) is considered a more strict shrinkage operation, and leads to sparser models.
-![](/images/lasso.png)
+![](/image/lasso.png)
 #### 4. Elastic Net
 * In an elastic net model, there are 2 tuning parameters we need to consider when using cross-validation: the L1 ratio and ![](https://latex.codecogs.com/gif.latex?%5Calpha). 
 * L1 ratio = 0 is ridge regression
@@ -72,23 +72,23 @@
 * Our model's L1 ratio chosen by cross-validation was 1, so in this case our elastic net model is the same as a lasso regression model.
 ### Results
 #### Features
-![](/images/wine%201.jpg)
+![](/image/wine%201.jpg)
 #### Comparing Models on Test Data
-![](/images/all%20models.png)
+![](/image/all%20models.png)
 
 <a href="#top">Back to top</a>
 
 
 # Full Code
 ## Project 1 Code  <a name="code1"></a>
-![](/images/Fortnite%20Project-1.png)
-![](/images/Fortnite%20Project-2.png)
-![](/images/Fortnite%20Project-3.png)
-![](/images/Fortnite%20Project-4.png)
-![](/images/Fortnite%20Project-5.png)
-![](/images/Fortnite%20Project-6.png)
-![](/images/Fortnite%20Project-7.png)
-![](/images/Fortnite%20Project-8.png)
+![](/image/Fortnite%20Project-1.png)
+![](/image/Fortnite%20Project-2.png)
+![](/image/Fortnite%20Project-3.png)
+![](/image/Fortnite%20Project-4.png)
+![](/image/Fortnite%20Project-5.png)
+![](/image/Fortnite%20Project-6.png)
+![](/image/Fortnite%20Project-7.png)
+![](/image/Fortnite%20Project-8.png)
 <br>
 <a href="#top">Back to top</a>
 
@@ -98,7 +98,7 @@
 <a href="#top">Back to top</a>
 
 ## Project 3 Code  <a name="code3"></a>
-![](/images/wine_proj_full.png)
+![](/image/wine_proj_full.png)
 
 <br>
 <a href="#top">Back to top</a>
