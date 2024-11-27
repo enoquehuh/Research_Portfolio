@@ -1,4 +1,4 @@
-# Enoque's UX Research Portfolio
+# Enoque's Research Portfolio
 ## Topics Overview
 * [Project 1.](#fortnite) Games Research — Sentiment Analysis and Web Scraping ([code](#code1))
 * [Project 2.](#survey) Survey Research — How does sleep deprivation affect how we interact with others? ([code](#code2))
