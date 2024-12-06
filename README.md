@@ -1,9 +1,8 @@
 # Enoque's Research Portfolio
 ## Topics Overview
-* [Project 1.](#fortnite) Games Research — Sentiment Analysis and Web Scraping ([code](#code1))
-* [Project 2.](#survey) Survey Research — How does sleep deprivation affect how we interact with others? ([code](#code2))
-* [Project 3.](#wine) Regression — What Makes Wine Taste Good? ([code](#code3))
-
+* [Project 1.](#fortnite) Games Research — Sentiment Analysis and Web Scraping 
+* [Project 2.](#survey) Survey Research — How does sleep deprivation affect how we interact with others? 
+* [Project 3.](#wine) Regression — What Makes Wine Taste Good? 
 # Project 1: Analyzing Player Sentiment on Fortnite's Changes to the XP System <a name="fortnite"></a>
 ### Introduction
 * Fortnite’s recent changes to how players can get XP (experience points) was received with mixed opinions. With the purchase of the Battle Pass (that costs 950 V-Bucks or around $8), players receive in-game rewards according to their levels. Players have a chance to win all of the Battle Pass rewards by reaching level 200 by the end of the season. One way to ensure you progress through all the levels and receive all of the rewards is by completing quests. Until recently, players were given quests that could be completed throughout the season, whenever they wanted. But with the changes to the Weekly Quests, players now have exactly one week to complete these quests before they expire forever. This has caused a lot of backlash in the community and has left casual players feeling like they're missing out on a lot of XP and potential rewards, and that there’s not enough time to complete their weekly quests.
@@ -97,27 +96,4 @@
 <a href="#top">Back to top</a>
 
 
-# Full Code
-## Project 1 Code  <a name="code1"></a>
-![](/image/Fortnite%20Project-1.png)
-![](/image/Fortnite%20Project-2.png)
-![](/image/Fortnite%20Project-3.png)
-![](/image/Fortnite%20Project-4.png)
-![](/image/Fortnite%20Project-5.png)
-![](/image/Fortnite%20Project-6.png)
-![](/image/Fortnite%20Project-7.png)
-![](/image/Fortnite%20Project-8.png)
-<br>
-<a href="#top">Back to top</a>
-
-## Project 2 Code  <a name="code2"></a>
-![](/image/qualtrics_code.png)
-<br>
-<a href="#top">Back to top</a>
-
-## Project 3 Code  <a name="code3"></a>
-![](/image/wine_proj_full.png)
-
-<br>
-<a href="#top">Back to top</a>
 
